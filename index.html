@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencias Solfeggio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dfe9f3, #ffffff);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        /* Colores asociados a cada frecuencia */
+        .hz-174 { background-color: #a5673f; } /* Marrón claro */
+        .hz-285 { background-color: #f88379; } /* Salmón */
+        .hz-396 { background-color: #ff0000; } /* Rojo */
+        .hz-417 { background-color: #ff7f50; } /* Coral */
+        .hz-432 { background-color: #ff1493; } /* Rosa fuerte */
+        .hz-528 { background-color: #ffd700; } /* Dorado */
+        .hz-639 { background-color: #00ff00; } /* Verde */
+        .hz-741 { background-color: #008080; } /* Verde azulado */
+        .hz-852 { background-color: #1e90ff; } /* Azul brillante */
+        .hz-963 { background-color: #800080; } /* Púrpura */
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .frequency-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frecuencias Solfeggio</h1>
+        <p>Las frecuencias Solfeggio son tonos de sonido que ayudan a equilibrar la energía y promueven la sanación. Cada una tiene un propósito especial y puede influir en el cuerpo y la mente de manera positiva. Haz clic en la frecuencia que quieras escuchar.</p>
+
+        <!-- Frecuencia 174 Hz -->
+        <div class="frequency-container">
+            <p>174 Hz - Marrón claro (Elimina el dolor)</p>
+            <button class="button hz-174" onclick="playFrequency(174)">Reproducir 174 Hz</button>
+            <button class="button hz-174" onclick="stopFrequency(174)">Detener 174 Hz</button>
+        </div>
+
+        <!-- Frecuencia 285 Hz -->
+        <div class="frequency-container">
+            <p>285 Hz - Salmón (Sanación rápida)</p>
+            <button class="button hz-285" onclick="playFrequency(285)">Reproducir 285 Hz</button>
+            <button class="button hz-285" onclick="stopFrequency(285)">Detener 285 Hz</button>
+        </div>
+
+        <!-- Frecuencia 396 Hz -->
+        <div class="frequency-container">
+            <p>396 Hz - Rojo (Libera el miedo y la culpa)</p>
+            <button class="button hz-396" onclick="playFrequency(396)">Reproducir 396 Hz</button>
+            <button class="button hz-396" onclick="stopFrequency(396)">Detener 396 Hz</button>
+        </div>
+
+        <!-- Frecuencia 417 Hz -->
+        <div class="frequency-container">
+            <p>417 Hz - Coral (Facilita el cambio)</p>
+            <button class="button hz-417" onclick="playFrequency(417)">Reproducir 417 Hz</button>
+            <button class="button hz-417" onclick="stopFrequency(417)">Detener 417 Hz</button>
+        </div>
+
+        <!-- Frecuencia 432 Hz -->
+        <div class="frequency-container">
+            <p>432 Hz - Rosa fuerte (Armoniza cuerpo y mente)</p>
+            <button class="button hz-432" onclick="playFrequency(432)">Reproducir 432 Hz</button>
+            <button class="button hz-432" onclick="stopFrequency(432)">Detener 432 Hz</button>
+        </div>
+
+        <!-- Frecuencia 528 Hz -->
+        <div class="frequency-container">
+            <p>528 Hz - Dorado (Reparación del ADN)</p>
+            <button class="button hz-528" onclick="playFrequency(528)">Reproducir 528 Hz</button>
+            <button class="button hz-528" onclick="stopFrequency(528)">Detener 528 Hz</button>
+        </div>
+
+        <!-- Frecuencia 639 Hz -->
+        <div class="frequency-container">
+            <p>639 Hz - Verde (Conexión con relaciones)</p>
+            <button class="button hz-639" onclick="playFrequency(639)">Reproducir 639 Hz</button>
+            <button class="button hz-639" onclick="stopFrequency(639)">Detener 639 Hz</button>
+        </div>
+
+        <!-- Frecuencia 741 Hz -->
+        <div class="frequency-container">
+            <p>741 Hz - Verde azulado (Despertar la intuición)</p>
+            <button class="button hz-741" onclick="playFrequency(741)">Reproducir 741 Hz</button>
+            <button class="button hz-741" onclick="stopFrequency(741)">Detener 741 Hz</button>
+        </div>
+
+        <!-- Frecuencia 852 Hz -->
+        <div class="frequency-container">
+            <p>852 Hz - Azul brillante (Regreso al orden espiritual)</p>
+            <button class="button hz-852" onclick="playFrequency(852)">Reproducir 852 Hz</button>
+            <button class="button hz-852" onclick="stopFrequency(852)">Detener 852 Hz</button>
+        </div>
+
+        <!-- Frecuencia 963 Hz -->
+        <div class="frequency-container">
+            <p>963 Hz - Púrpura (Activación de la glándula pineal)</p>
+            <button class="button hz-963" onclick="playFrequency(963)">Reproducir 963 Hz</button>
+            <button class="button hz-963" onclick="stopFrequency(963)">Detener 963 Hz</button>
+        </div>
+
+        <footer>
+            <p>© 2024 Armonía en Frecuencias</p>
+        </footer>
+    </div>
+
+    <script>
+        let audioContext = null;
+        let oscillators = {};
+
+        function playFrequency(frequency) {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+
+            // Si ya existe un oscilador para esta frecuencia, detenerlo primero
+            if (oscillators[frequency]) {
+                stopFrequency(frequency);
+            }
+
+            // Crear un oscilador para la nueva frecuencia
+            let oscillator = audioContext.createOscillator();
+            let gainNode = audioContext.createGain();
+
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+
+            oscillator.start();
+
+            // Guardar el oscilador para poder detenerlo más tarde
+            oscillators[frequency] = { oscillator, gainNode };
+
+            // Detener después de 60 minutos (3600 segundos)
+            setTimeout(() => stopFrequency(frequency), 3600000);
+        }
+
+        function stopFrequency(frequency) {
+            if (oscillators[frequency]) {
+                oscillators[frequency].oscillator.stop();
+                oscillators[frequency].oscillator.disconnect();
+                oscillators[frequency].gainNode.disconnect();
+
+                delete oscillators[frequency];
+            }
+        }
+    </script>
+
+</body>
+</html>
+
